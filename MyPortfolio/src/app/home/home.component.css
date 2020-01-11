@@ -1,0 +1,41 @@
+.home{
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+    width: 100%;
+    background-image: url(../../assets/pictures/global/DreamCatcher.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.picture{
+    width: 100%;
+    text-align: center;
+}
+
+.home img{
+    width: 20%;
+    height: auto;
+    border-radius: 50% 50%;
+    border: black 1px solid;
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+}
+
+.titre p{
+    margin: 50px 0 75px 0;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px 25px;
+    padding: 10px 50px;
+}
+
+.Me{
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
