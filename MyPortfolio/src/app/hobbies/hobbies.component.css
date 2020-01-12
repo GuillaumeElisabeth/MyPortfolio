@@ -1,0 +1,104 @@
+* {box-sizing:border-box}
+
+.globalContainer{
+    position: relative;
+    margin: auto;
+}
+
+.container{
+    background-color: rgba(251, 250, 230, 1);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.hobbyInfo{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hobbyContainer{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 5%;
+}
+
+.hobbyContainer:hover img{
+    opacity: 0.3;
+}
+
+.hobbyContainer:hover .hobbyInfo{
+    opacity: 1;
+}
+
+.info{
+    background-color: white;
+    color: black;
+    padding: 5%;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.modalContainer{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #000000d1;
+  top: 0;
+  left: 0;
+  padding: 5%;
+  z-index: 10;
+}
+
+.modal{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.moreDetails{
+  text-align: right;
+  cursor: pointer;
+}
+
+.modalReturnContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.modalReturn{
+  color: white;
+  cursor: pointer;
+}
+
+.title p{
+    text-align: center;
+    padding: 25px;
+}
+
+.title p label{
+    border: 1px solid black;
+    padding: 5px 150px;
+    border-radius: 25px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: cursive;
+}
