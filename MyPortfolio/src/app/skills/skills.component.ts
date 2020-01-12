@@ -9,8 +9,8 @@ export class SkillsComponent implements OnInit {
 
   constructor() { }
 
-  _isModalVisible: boolean = true;
-  _isSlideVisible: Array<boolean> = [false, false, false, false, false, true, false, false, false, false];
+  _isModalVisible: boolean = false;
+  _isSlideVisible: Array<boolean> = [false, false, false, false, false, false, false, false, false, false];
 
   ngOnInit() {
   }
