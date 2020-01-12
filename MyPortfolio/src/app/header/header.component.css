@@ -1,0 +1,54 @@
+.headerContainer{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+}
+
+.welcomeMessage{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigationBar{
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navigationBar a{
+    display: flex;
+    width: 150px;
+    margin-left: 5px;
+    padding: 5px;
+    transition: all 0.45s;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.navigationBar a:not(:hover){
+    transform: translateX(-25px); 
+}
+
+.navigationBar a:hover{
+    transform: translateX(0px) scale(1.5);
+    font: 1.1em;
+}
+
+.navigationBar a:hover ~a{
+    transform: translateX(25px);
+}
+
+.bringToFront{
+    z-index: 2;
+}
+
+.bringToFront a, .headerText {
+    color: black !important;
+    font-weight: bold;
+    font-size: 1.3em;
+}
