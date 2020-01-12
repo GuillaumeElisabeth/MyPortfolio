@@ -1,0 +1,54 @@
+.title p {
+    text-align: center;
+    padding: 25px;
+}
+
+.title p label{
+    border: 1px solid black;
+    padding: 5px 150px;
+    border-radius: 25px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.picture{
+    width: 100%;
+    text-align: center;
+}
+
+.aboutMe img{
+    width: 90%;
+    border-radius: 50% 50%;
+    border: black 1px solid;
+}
+
+.aboutMeText{
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.aboutMeText p{
+    font-family: sans-serif;
+}
+
+.internalLink{
+    text-decoration: none;
+    color: #16b84e;
+    font-size: 1.1em;
+}
+
+.internalLink:hover{
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+.citation{
+    font-style: italic;
+}
+
+.bold{
+    font-weight: bold;
+}
