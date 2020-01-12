@@ -1,0 +1,442 @@
+<div class="title">
+    <p><label>Projets</label></p>
+  </div>
+  
+  <div id="projectsContainerID" class="slideshow-container">
+  
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade" [ngStyle]="{'display' : _isSlideVisible[0] ? 'flex' : 'none'}">
+        <div class="numbertext right">1 / 5</div>
+        <div class="numbertext left">Mars 2020 - Mars 2020</div>
+        <img src="../../assets/pictures/experiences/SociétéGénérale.png">
+        <div class="text">
+          <p class="textTitle">
+            MERCI
+          </p>
+  
+          <p>
+            Projet de numérisation des outils de recouvrement des filiales de la Société Générale
+            en Afrique, au Moyen-Orient, en Europe de l'est et dans les DOMTOM.
+          </p>
+  
+          <div class="containerItemOnSameLine">
+              <p>
+                <label class="underline">Équipe :</label> 4 personnes
+              </p>
+              <p>
+                <label class="underline">Technologies utilisées :</label> 
+                C#, Microsoft.NET, JS, HTML5, CSS3, JQuery, SQL, Talend, 
+                Java, SSMS & VBA
+              </p>
+              <p class="moreDetails">
+                <a class="moreInformation" (click)="showProjectsModal()">Plus d'informations</a>
+              </p>
+          </div>
+        </div>
+      </div>
+      <div class="mySlides fade" [ngStyle]="{'display' : _isSlideVisible[1] ? 'flex' : 'none'}">
+        <div class="numbertext right">2 / 5</div>
+        <div class="numbertext left">Mars 2020 - Mars 2020</div>
+        <img src="../../assets/pictures/experiences/QuantumOne.png">
+        <div class="text">
+          <p class="textTitle">
+            Atlas
+          </p>
+  
+          <p>
+            Développement d'un outil interne de CRM (Customer relationship management) et 
+            ERP (Enterprise resource planning) de la startup QuantumOne.
+          </p>
+  
+          <div class="containerItemOnSameLine">
+              <p>
+                <label class="underline">Équipe :</label> 1 personne
+              </p>
+              <p>
+                <label class="underline">Technologies utilisées :</label> C#, ASP.NET, HTML5, CSS3, Microsoft Azure.
+              </p>
+              <p class="moreDetails">
+                <a class="moreInformation" (click)="showProjectsModal()">Plus d'informations</a>
+              </p>
+          </div>
+        </div>
+      </div>
+    <div class="mySlides fade" [ngStyle]="{'display' : _isSlideVisible[2] ? 'flex' : 'none'}">
+      <div class="numbertext right">3 / 5</div>
+      <div class="numbertext left">Mars 2020 - Mars 2020</div>
+      <img src="../../assets/pictures/projects/LostTime/LostTime.png">
+      <div class="text">
+        <p class="textTitle">
+          Lost Time
+        </p>
+  
+        <p>
+          Réaliser un jeu vidéo style action RPG au gameplay original sur Android permettant au 
+          joueur de découvrir et de se déplcaer dans un univer SteamPunk pour résoudre les différentes
+          égnimes lui permettant de réussir sa mission.
+        </p>
+  
+        <div class="containerItemOnSameLine">
+            <p>
+              <label class="underline">Équipe :</label> 5 personnes
+            </p>
+            <p>
+              <label class="underline">Technologies utilisées :</label> 
+              C#, .NET, ASP.NET, HTML5, CSS3, Unity3D, Javascript, Vue.js, SSMS
+            </p>
+            <p class="moreDetails">
+              <a class="moreInformation" (click)="showProjectsModal()">Plus d'informations</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="mySlides fade" [ngStyle]="{'display' : _isSlideVisible[3] ? 'flex' : 'none'}">
+      <div class="numbertext right">4 / 5</div>
+      <div class="numbertext left">Mars 2020 - Mars 2020</div>
+      <img src="../../assets/pictures/projects/TeaTalk/TeaTalk.png">
+      <div class="text">
+        <p class="textTitle">
+          Tea Talk
+        </p>
+  
+        <p>
+          Organiser une après-midi de conférence de style TEDx pour les étudiants du groupe ESIEA 
+          et ouvert au grand public sur les sujets :
+        </p>
+
+        <ul>
+            <li style="text-align: left;">Informatique émotionnelle par Lionel Prévost, 
+                enseignant chercheur au laboratoire LDR de l'ESIEA.</li>
+            <li style="text-align: left;">La recherche médicale citoyenne par Philippe Manivet, PhD.</li>
+        </ul>
+  
+        <div class="containerItemOnSameLine">
+            <p>
+              <label class="underline">Équipe :</label> 4 personnes
+            </p>
+            <p> </p>
+            <p class="moreDetails">
+              <a class="moreInformation" (click)="showProjectsModal()">Plus d'informations</a>
+            </p>
+        </div>
+      </div>
+    </div>
+    <div class="mySlides fade" [ngStyle]="{'display' : _isSlideVisible[4] ? 'flex' : 'none'}">
+      <div class="numbertext right">5 / 5</div>
+      <div class="numbertext left">Mars 2020 - Mars 2020</div>
+      <img src="../../assets/pictures/projects/TableDeTyr/[TableDeTyr] Logo.jpg">
+      <div class="text">
+        <p class="textTitle">
+          Table de Tyr
+        </p>
+  
+        <p>
+          Développement d'un jeu de stratégie combinatoire d'origine scandinave avec une intelligence artificielle
+          capable d'analyser, de simuler X tours, de noter et de jouer le meilleur coup possible.
+        </p>
+  
+        <div class="containerItemOnSameLine">
+            <p>
+              <label class="underline">Équipe :</label> 3 personnes
+            </p>
+            <p>
+              <label class="underline">Technologies utilisées :</label> C#, Microsoft .NET, Xamarin & XML.
+            </p>
+            <p class="moreDetails">
+              <a class="moreInformation" (click)="showProjectsModal()">Plus d'informations</a>
+            </p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+    <a class="next" (click)="plusSlides(1)">&#10095;</a>
+  </div>
+  <br/><br/>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" (click)="currentSlide(1)"></span>
+    <span class="dot" (click)="currentSlide(2)"></span>
+    <span class="dot" (click)="currentSlide(3)"></span>
+    <span class="dot" (click)="currentSlide(4)"></span>
+    <span class="dot" (click)="currentSlide(5)"></span>
+  </div>
+  
+  <p style="height: 25px;" id="skills"></p>
+  
+  <div class="modalContainer"
+  [ngStyle]="{'display' : _isModalVisible ? 'block' : 'none'}">
+  
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[0] ? 'flex' : 'none'}">
+      <p class="modalTitle">
+        MERCI
+      </p>
+      <p>
+        <label class="bold">Projet de numérisation</label> des procédures des filiales d'Afrique du sud, 
+        Moyen-Orient, Europe de l'est et DOMTOM de la société générale dans le secteur du recouvrement bancaire.
+      </p>
+      <p>
+        Notre mission consiste à : <br/><br/>
+        •	<label class="bold">Analyser</label> les demandes du client pour <label class="bold">comprendre
+        </label> et différencier ses besoins de ses désirs.<br/>
+        •	<label class="bold">Proposer</label> une ou plusieurs <label class="bold">solution(s)</label> 
+        différentes pour répondre aux demandes.<br/>
+        •	<label class="bold">S’accorder</label> avec le client sur une solution à mettre en place.<br/>
+        •	<label class="bold">Développer</label>, <label class="bold">tester</label> et <label class="bold">
+            déployer </label> chez le client cette solution.<br/>
+        •	<label class="bold">Accompagner</label> le client et ses employés dans la conduite du changement 
+        liée à cette nouvelle solution.
+      </p>
+      <p>
+        Cependant, comme nous travaillons dans un <label class="bold">contexte international</label> nous 
+        devons connaître et être attentifs aux <label class="bold">différences culturelles</label> pour 
+        <label class="bold">travailler</label> avec nos filiales internationales dans les 
+        <label class="bold">meilleures conditions possibles</label>.
+        <br/>
+        Par exemple, dans certains pays d’Afrique, l’organisation internet est verticale, donc 
+        chaque étape du projet doit être validée par l’administration avant de continuer le projet. 
+        Ce qui peut prendre des semaines / des mois, et de ce fait, nous devions prévoir ce temps dans 
+        notre planning.
+      </p>
+      <p>
+        Mon travail consistait à : <br/><br/>
+        •	<label class="bold">Suivre</label> le bon fonctionnement de l’application chez chaque client grâce 
+        à des logs et des mails automatiques. <br/>
+        •	De <label class="bold">travailler</label> sur les nouvelles <label class="bold">
+        demandes de client</label> de l’analyste à l’accompagnement. <br/>
+        •	Ainsi que de <label class="bold">travailler</label> sur la <label class="bold">nouvelle version
+        </label> de l’application : l’architecture, les choix technologiques, le développement de 
+        l’application, les tests et la livraison chez le 1er client.
+      </p>
+      <p>
+        Nous travaillons en relation avec le département du recouvrement bancaire de la société générale, 
+        avec le département des RISQ, le département d’octroi de crédits et les filiales.
+      </p>
+      <p>
+        Aujourd’hui, notre application est <label class="bold">déployée</label> dans plus de <label class="bold">
+        20 filiales</label> de la société générale et nos clients sont <label class="bold">satisfaits</label> 
+        par notre travail et n’hésitent plus en cas de problème à nous contacter directement. De plus, 
+        beaucoup sont déjà <label class="bold">en attente</label> du déploiement de la <label class="bold">
+        nouvelle version</label> chez eux même si celle-ci n’est prévue qu’à partir de 2021 à 2022 pour certaines.
+      </p>
+      <p>
+        Un point d’<label class="bold">évolution</label> pour ce projet serait d’aider nos <label class="bold">
+        filiales</label> à devenir <label class="bold">plus indépendantes</label> sur 
+        certaines parties du projet et de la maintenance grâce à un site internet qui leur permettrait 
+        de résoudre eux-mêmes certaines anomalies qu’ils peuvent rencontrer. Site web qui est aussi en 
+        cours de développement, pour la nouvelle version de l’application, par un membre de l’équipe en 
+        parallèle.
+      </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[1] ? 'flex' : 'none'}">
+        <p class="modalTitle">
+            Atlas
+          </p>
+          <p>
+            <label class="bold">Projet de numérisation et de centralisation</label> des procédures 
+            internes de gestion de la relations clients et de gestion des ressources internes de l'entreprise.
+          </p>
+          <p>
+            Ma mission consistait à : <br/><br/>
+            •	<label class="bold">Analyser</label> les demandes du président pour <label class="bold">comprendre
+            </label> ses besoins et ses attentes.<br/>
+            •	<label class="bold">Proposer</label> une <label class="bold">solution</label> 
+            qui correspond aux attentes et aux besoins des différents membres de l'administration (CEO, DRH, ...)<br/>
+            •	<label class="bold">S’accorder</label> avec le président et le directeur du pôle technique sur 
+            la solution à mettre en place.<br/>
+            •	<label class="bold">Développer</label>, <label class="bold">tester</label> et <label class="bold">
+                déployer </label> en interne cette solution.<br/>
+            •	<label class="bold">Accompagner</label> les différentes parties de la société dans l'utilisation
+            du nouvel outil de gestion.
+          </p>
+          <p>
+            Cependant, comme l'application que je devais développer toucher toutes les parties de la société,
+            il était important en amont, d'<label class="bold">organiser</label> l'application en modules 
+            et de les <label class="bold">prioriser</label>.
+            Ainsi, un <label class="bold">planning</label> a été mis en place pour permettre un meilleur 
+            <label class="bold">suivi de l'avancement</label> de l'application.
+          </p>
+          <p>
+            Mon travail consistait à : <br/><br/>
+            •	<label class="bold">Étudier</label> et <label class="bold">comprendre</label> les besoins 
+            et les attentes de chaque acteur de cette application.<br/>
+            •	<label class="bold">Développer</label> l'application interne de l'entreprise.<br/>
+            •	<label class="bold">Accompagner</label> chaque acteur du projet dans l'utilisation du 
+            nouvel outil de l'entreprise.
+          </p>
+          <p>
+            Je travaillais en relation avec le président directeur général, la directrice des ressources 
+            humaines, le directeur du pôle technique ainsi que les employés de l'entreprise.
+          </p>
+          <p>
+            Lors de ma période dans cette société, j'avais commencé à <label class="bold">déployer</label> 
+            le module de gestion des congés et le module de gestion de la paye sur le portail azure de la société.
+          </p>
+          <p>
+            Un point d’<label class="bold">évolution</label> pour ce projet aurait d'<label class="bold">
+            avoir une équipe avec un manager</label> sur le projet car j'ai souvent été confronté à des 
+            problèmes de droit au niveau du portail azure de la société. <label class="bold">Travailler seul
+            </label> sur un projet a selon moi des <label class="bold">limites</label>.
+          </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[2] ? 'flex' : 'none'}">
+        <p class="modalTitle">
+          Lost Time
+        </p>
+        <p>
+            En troisème année d'école, nous avons choisi de nous lancer sur un <label class="bold">
+            projet ambitieux </label> et difficile. En effet, l'équipe a décidé de travailler sur un projet de 
+            <label class="bold">jeu vidéo mobile 3D</label>. Nous voulions dépasser nos limites et 
+            travailler sur des sujets inconnus.
+
+            C'est de cette façon que le projet a vu le jour.
+
+            Nous voulions un <label class="bold">projet complexe</label> avec peu de connaissance de base et 
+            dans un <label class="bold">temps limité</label> (3 mois).<br/>
+            Nous voulions tester nos capacités.
+        </p>
+        <p>
+            Nous avions des <label class="bold">objectis clairs</label>. Nous voulions : un jeu, 
+            résolution d'égnimes, mobilité dans un monde 3D, mobile et multi-joueur.<br/>
+            Avec tout sa, il était important de <label class="bold">choisir nos armes</label> : 
+            Microsoft.NET, Unity3D, C# et notre passion commune pour l'informatique et les jeux vidéo.
+        </p>
+        <p>
+            Maintenant, il fallait s'organiser. <label class="bold">Définir un planning</label> était 
+            primordial pour la réussite de notre mission. Nous avons donc <label class="bold">
+            diviser le projet en plusieurs modules: </label> 
+            •	Le design (l'affichade des éléments du jeu).<br/> 
+            •	Le personnage (les intéractions du personnage avec le monde).<br/> 
+            •	L'user interface (l'intéraction du joueur avec le jeu).<br/> 
+            •	Les systèmes coeurs du jeux (sauvegarde, systèmes d'égnimes, animation, ...);
+        </p>
+        <p>
+            Mais avant de nous lancer dans le développement, nous avions deux semaines pour prendre en main 
+            Unity3D : de la création d'un bloc à son intéraction avec le monde extérieur.
+        </p>
+        <p>
+            Leader du projet, mon travail consitait à organiser et faire collaborer les membres de 
+            l'équipe entre eux. Je devais prioriser nos efforts sur les tâches essentielles à notre jeux 
+            sans oublier notre objectif commun et ceux de chacun.
+        </p>
+        <p>
+            J'ai été aussi chargé de travailler sur : <br/>
+            •	Une interface utilisateur <label class="bold">ergonomique</label>.<br/>
+            •	Sur le système de sauvegarde de partie <label class="bold">sécurisé</label>.<br/>
+            •	Sur le menu du jeu.<br/>
+            •	Sur le système de résolution d'égnimes.
+        </p>
+        <p>
+            Nous avons dû faire face à des <label class="bold">problèmes de lenteur</label> lors de notre 
+            projet. Pour résoudre en résoudre
+            certains, nous devions <label class="bold">optimiser</label> la mémoire et la ram qu'utilisait 
+            notre application. De ce fait, 
+            nous devions être <label class="bold">rigoureux</label> dans notre travail et plus 
+            <label class="bold">assidue</label> dans notre pensé. 
+        </p>
+        <p>
+            Un point d'<label class="bold">évolution</label> serait qu'on aurait dû mieux <label class="bold">
+            gérer notre temps</label>. Savoir calculer et comparer le temps de développement d'une telle 
+            application avec notre temps imparti.
+        </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[3] ? 'flex' : 'none'}">
+        <p class="modalTitle">
+          Tea talk
+        </p>
+        <p>
+            Projet d'<label class="bold">organisation d'un événement</label> de type TEDx sur
+            des sujets d'actualités. Ce projet étudiant est né de l'envie avec mon équipe d'organiser 
+            un évènement différent et plus gratifiant pour notre école.
+        </p>
+        <p>
+          Notre mission consiste à : <br/><br/>
+          •	<label class="bold">Organiser un après-midi de conférence</label><br/>
+          •	<label class="bold">Prendre contact</label> avec des conférenciers, des chercheurs et 
+          des doctorants.<br/>
+          •	<label class="bold">Plannifier</label> le projet et <label class="bold">suivre</label> un budget
+          pour organiser cette événement.<br/>
+          •	<label class="bold">Répartir</label> les tâches entre les différents membres de l'équipe pour 
+          optimiser la quantité de travail et le temps imparti avant le jour J.<br/>
+          •	<label class="bold">Communiquer</label> sur l'événement.
+        </p>
+        <p>
+            Cependant, comme notre budget était limité, nous devions trouver des conférenciers qui
+            accepteraient de participer à notre projet bénévolement ou à moindre coût.
+            Nous avons donc pris contact avec plusieurs conférenciers et après plusieurs semaines de 
+            discussion, nous avons fini par valider 2 conférences : <br/>
+            •	Informatique émotionnelle, par Lionel Prévost, enseignant-chercheur à l'ESIEA.
+            •	Recherche médical citoyenne, par Philippe Manivet, PhD.
+        </p>
+        <p>
+          Mon travail consistait à : <br/><br/>
+          •	<label class="bold">Organiser</label> des événements (buvettes, repas) pour récolter de l'argent.<br/>
+          •	<label class="bold">Rechercher</label> des conférenciers.<br/>
+          •	<label class="bold">Communiquer</label> sur l'événement d'abord à l'intérieur de notre école, 
+          puis à l'extérieure.
+        </p>
+        <p>
+          Nous travaillons en relation avec le département de communication du groupe ESIEA, la directrice des 
+          projets de formations humaines et les conférenciers qui ont acceptés de participer à notre événenemt.
+        </p>
+        <p>
+            La journée de conférence s'est passé dans de très bonne conditions. Nous avons été félicités pour 
+            l'organisation de cette journée par notre école et par les conférenciers.
+        </p>
+        <p>
+            Un point d’<label class="bold">évolution</label> pour ce projet serait de tester la salle
+            avant la conférence pour l'enregistrement, tester / acheter du matériel de meilleur qualité 
+            (micro-cravate sans fil, meilleur caméra). Il nous faut améliorer notre <label class="bold">
+            méthode de communication</label> vers l'extérieure (commencer la commnication plus tôt, 
+            adapter notre langage).
+        </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[4] ? 'flex' : 'none'}">
+        <p class="modalTitle">
+          Table de Tyr
+        </p>
+        <p>
+            En fin de deuxième année d'école, nous avons choisi de nous développer un jeu de plateau et une 
+            <label class="bold">intelligence artificielle</label>. Nous voulions créer une IA capable 
+            d'analyser, de simuler et de jouer le meilleur coup possible à chaque tour.
+
+            C'est de cette façon que l'équipe a vu le jour, et que le projet a été validé.
+        </p>
+        <p>
+            Nos objectifs étaient clairs, nous voulions d'un jeu de plateau où le joueur pouvait jouer 
+            contre une IA avec plusieurs niveaus de difficultés.
+            Nous avons donc choisi de travailler avec <label class="bold">Microsoft.NET, C# et XML</label>.
+        </p>
+        <p>
+            Tout d'abord, nous avons <label class="bold">diviser le projet en 3 parties</label> : 
+            l'interface utilisateur, le core du jeu et l'intelligence artificielle.<br/>
+            Nous nous sommes répartis les tâches selon les 3 parties avec l'idée de terminer rapidement
+            le jeux et son interface pour pouvoir se pencher sur la partir qui nous interessait tous.
+        </p>
+        <p>
+            Mon travail dans ce projet était : <br/>
+            •	Développer l'interface utilisateur.<br/>
+            •	Programmer le module de création de carte personnalisé.<br/>
+            •	Implémenter le module de sauvegarde de partie.<br/>
+            •	Mettre en place le système d'analyse de l'intelligence artificielle.
+        </p>
+        <p>
+            Nous avons dû faire face à des <label class="bold">problèmes humain</label> lors de notre 
+            projet. Un membre de notre équipe était moins technique que les deux autres, ce qui a 
+            eu pour conséquences de diminuer le temps de travail sur l'intelligence artificielle.
+        </p>
+        <p>
+            Notre point d'<label class="bold">évolution</label> aurait été de travailler <label class="bold">
+            notre cohésion d'équipe</label>. Celà aurait permit aux membre de l'équipe d'avancer ensemble 
+            sur ce projet.
+        </p>
+    </div>
+  
+    <div class="modalReturnContainer">
+      <p (click)="hideProjectsModal()" class="modalReturn">Retour</p>
+    </div>
+  
+  
+  </div>
