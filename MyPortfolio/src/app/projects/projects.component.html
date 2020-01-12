@@ -29,7 +29,7 @@
                 Java, SSMS & VBA
               </p>
               <p class="moreDetails">
-                <a class="moreInformation" (click)="showProjectsModal()">Plus d'informations</a>
+                <a class="moreInformation" (click)="showProjectsModal(1)" id="project0">Plus d'informations</a>
               </p>
           </div>
         </div>
@@ -56,7 +56,7 @@
                 <label class="underline">Technologies utilisées :</label> C#, ASP.NET, HTML5, CSS3, Microsoft Azure.
               </p>
               <p class="moreDetails">
-                <a class="moreInformation" (click)="showProjectsModal()">Plus d'informations</a>
+                <a class="moreInformation" (click)="showProjectsModal(2)" id="project1">Plus d'informations</a>
               </p>
           </div>
         </div>
@@ -85,7 +85,7 @@
               C#, .NET, ASP.NET, HTML5, CSS3, Unity3D, Javascript, Vue.js, SSMS
             </p>
             <p class="moreDetails">
-              <a class="moreInformation" (click)="showProjectsModal()">Plus d'informations</a>
+              <a class="moreInformation" (click)="showProjectsModal(3)" id="project2">Plus d'informations</a>
             </p>
         </div>
       </div>
@@ -116,7 +116,7 @@
             </p>
             <p> </p>
             <p class="moreDetails">
-              <a class="moreInformation" (click)="showProjectsModal()">Plus d'informations</a>
+              <a class="moreInformation" (click)="showProjectsModal(4)" id="project3">Plus d'informations</a>
             </p>
         </div>
       </div>
@@ -143,7 +143,7 @@
               <label class="underline">Technologies utilisées :</label> C#, Microsoft .NET, Xamarin & XML.
             </p>
             <p class="moreDetails">
-              <a class="moreInformation" (click)="showProjectsModal()">Plus d'informations</a>
+              <a class="moreInformation" (click)="showProjectsModal(5)" id="project4">Plus d'informations</a>
             </p>
         </div>
       </div>
@@ -229,6 +229,20 @@
         cours de développement, pour la nouvelle version de l’application, par un membre de l’équipe en 
         parallèle.
       </p>
+      <p class="underline">
+        Compétences utilisées :
+      </p>
+      <p class="linkToSkills">
+        <a (click)="GoToSkill(0)">
+          <img src="../../assets/pictures/skills/technicalSkills/DotNetCore.png"/>
+        </a>
+        <a (click)="GoToSkill(5)">
+          <img src="../../assets/pictures/skills/technicalSkills/Talend.png"/>
+        </a>
+        <a (click)="GoToSkill(6)">
+          <img src="../../assets/pictures/skills/humanSkills/Organisation.jpg"/>
+        </a>
+      </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[1] ? 'flex' : 'none'}">
         <p class="modalTitle">
@@ -279,6 +293,20 @@
             avoir une équipe avec un manager</label> sur le projet car j'ai souvent été confronté à des 
             problèmes de droit au niveau du portail azure de la société. <label class="bold">Travailler seul
             </label> sur un projet a selon moi des <label class="bold">limites</label>.
+          </p>
+          <p class="underline">
+            Compétences utilisées :
+          </p>
+          <p class="linkToSkills">
+            <a (click)="GoToSkill(0)">
+              <img src="../../assets/pictures/skills/technicalSkills/DotNetCore.png"/>
+            </a>
+            <a (click)="GoToSkill(2)">
+              <img src="../../assets/pictures/skills/technicalSkills/SSMS.jpg"/>
+            </a>
+            <a (click)="GoToSkill(9)">
+              <img src="../../assets/pictures/skills/humanSkills/autonomie.png"/>
+            </a>
           </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[2] ? 'flex' : 'none'}">
@@ -341,6 +369,20 @@
             gérer notre temps</label>. Savoir calculer et comparer le temps de développement d'une telle 
             application avec notre temps imparti.
         </p>
+        <p class="underline">
+          Compétences utilisées :
+        </p>
+        <p class="linkToSkills">
+          <a (click)="GoToSkill(0)">
+            <img src="../../assets/pictures/skills/technicalSkills/DotNetCore.png"/>
+          </a>
+          <a (click)="GoToSkill(3)">
+            <img src="../../assets/pictures/skills/technicalSkills/Unity3D.png"/>
+          </a>
+          <a (click)="GoToSkill(8)">
+            <img src="../../assets/pictures/skills/humanSkills/flexibility.jpg"/>
+          </a>
+        </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[3] ? 'flex' : 'none'}">
         <p class="modalTitle">
@@ -392,6 +434,20 @@
             méthode de communication</label> vers l'extérieure (commencer la commnication plus tôt, 
             adapter notre langage).
         </p>
+        <p class="underline">
+          Compétences utilisées :
+        </p>
+        <p class="linkToSkills">
+          <a (click)="GoToSkill(6)">
+            <img src="../../assets/pictures/skills/humanSkills/Organisation.jpg"/>
+          </a>
+          <a (click)="GoToSkill(7)">
+            <img src="../../assets/pictures/skills/humanSkills/ForceDeProposition.jpg"/>
+          </a>
+          <a (click)="GoToSkill(8)">
+            <img src="../../assets/pictures/skills/humanSkills/flexibility.jpg"/>
+          </a>
+        </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[4] ? 'flex' : 'none'}">
         <p class="modalTitle">
@@ -431,6 +487,20 @@
             Notre point d'<label class="bold">évolution</label> aurait été de travailler <label class="bold">
             notre cohésion d'équipe</label>. Celà aurait permit aux membre de l'équipe d'avancer ensemble 
             sur ce projet.
+        </p>
+        <p class="underline">
+          Compétences utilisées :
+        </p>
+        <p class="linkToSkills">
+          <a (click)="GoToSkill(0)">
+            <img src="../../assets/pictures/skills/technicalSkills/DotNetCore.png"/>
+          </a>
+          <a (click)="GoToSkill(7)">
+            <img src="../../assets/pictures/skills/humanSkills/ForceDeProposition.jpg"/>
+          </a>
+          <a (click)="GoToSkill(9)">
+            <img src="../../assets/pictures/skills/humanSkills/autonomie.png"/>
+          </a>
         </p>
     </div>
   

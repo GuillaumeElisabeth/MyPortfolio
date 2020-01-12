@@ -29,4 +29,9 @@ export class SkillsComponent implements OnInit {
     document.getElementsByTagName('body')[0].style.overflow = "scroll";
   }
 
+  GoToProjects(index: number){
+    this.hideSkillsModal();
+    document.getElementById('project' + index).click();
+  }
+
 }

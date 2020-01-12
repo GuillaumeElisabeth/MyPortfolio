@@ -214,3 +214,9 @@
 .bold{
   font-weight: bold;
 }
+
+.linkToSkills a img{
+  width: 150px;
+  height: 150px;
+  margin: 1%;
+}

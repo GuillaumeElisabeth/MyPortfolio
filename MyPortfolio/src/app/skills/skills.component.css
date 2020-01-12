@@ -124,6 +124,10 @@ img{
   text-decoration: underline;
 }
 
+.underline{
+  text-decoration: underline;
+}
+
 .modalTitle{
   font-weight: bold;
   font-size: 20px;
@@ -136,4 +140,10 @@ img{
 
 .pairColor{
   background-color: white !important;
+}
+
+.linkToSkills a img{
+  width: 150px;
+  height: 150px;
+  margin: 1%;
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SkillsComponent } from '../skills/skills.component';
 
 @Component({
   selector: 'app-projects',
@@ -40,7 +41,9 @@ export class ProjectsComponent implements OnInit {
     dots[this._slideIndex - 1].className += " active";
   }
 
-  showProjectsModal(){ 
+  showProjectsModal(index: number){ 
+    this.currentSlide(index);
+    this.showSlides(index);
     this._isModalVisible = true; 
     document.getElementsByTagName('body')[0].style.overflow = "hidden";
   }
@@ -48,6 +51,11 @@ export class ProjectsComponent implements OnInit {
   hideProjectsModal(){ 
     this._isModalVisible = false; 
     document.getElementsByTagName('body')[0].style.overflow = "scroll";
+  }
+
+  GoToSkill(index: number){
+    this.hideProjectsModal();
+    document.getElementById('skill' + index).click();
   }
 
 }

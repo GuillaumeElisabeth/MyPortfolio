@@ -13,7 +13,7 @@
               C# & Microsoft.NET
             </p>
             <p>
-              <a class="moreInformation" (click)="showSkillsModal(0)">Plus d'informations</a>
+              <a class="moreInformation" (click)="showSkillsModal(0)" id="skill0">Plus d'informations</a>
             </p>
           </div>
         </div>
@@ -27,7 +27,7 @@
                 Javascript
               </p>
               <p>
-                <a class="moreInformation" (click)="showSkillsModal(1)">Plus d'informations</a>
+                <a class="moreInformation" (click)="showSkillsModal(1)" id="skill1">Plus d'informations</a>
               </p>
           </div>
         </div>
@@ -41,7 +41,7 @@
                 SQL Server Management Studio & T-SQL
               </p>
               <p>
-                <a class="moreInformation" (click)="showSkillsModal(2)">Plus d'informations</a>
+                <a class="moreInformation" (click)="showSkillsModal(2)" id="skill2">Plus d'informations</a>
               </p>
           </div>
         </div>
@@ -55,7 +55,7 @@
                 Unity3D
               </p>
               <p>
-                <a class="moreInformation" (click)="showSkillsModal(3)">Plus d'informations</a>
+                <a class="moreInformation" (click)="showSkillsModal(3)" id="skill3">Plus d'informations</a>
               </p>
           </div>
         </div>
@@ -69,7 +69,7 @@
                 HTML5 & CSS3
               </p>
               <p>
-                <a class="moreInformation" (click)="showSkillsModal(4)">Plus d'informations</a>
+                <a class="moreInformation" (click)="showSkillsModal(4)" id="skill4">Plus d'informations</a>
               </p>
           </div>
         </div>
@@ -83,7 +83,7 @@
                 Talend
               </p>
               <p>
-                <a class="moreInformation" (click)="showSkillsModal(5)">Plus d'informations</a>
+                <a class="moreInformation" (click)="showSkillsModal(5)" id="skill5">Plus d'informations</a>
               </p>
           </div>
         </div>
@@ -103,7 +103,7 @@
               Organisation
             </p>
             <p>
-              <a class="moreInformation" (click)="showSkillsModal(6)">Mon expérience</a>
+              <a class="moreInformation" (click)="showSkillsModal(6)" id="skill6">Mon expérience</a>
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@
                 Force de proposition
               </p>
               <p>
-                <a class="moreInformation" (click)="showSkillsModal(7)">Plus d'informations</a>
+                <a class="moreInformation" (click)="showSkillsModal(7)" id="skill7">Plus d'informations</a>
               </p>
           </div>
         </div>
@@ -131,7 +131,7 @@
                 Adaptabilité
               </p>
               <p>
-                <a class="moreInformation" (click)="showSkillsModal(8)">Plus d'informations</a>
+                <a class="moreInformation" (click)="showSkillsModal(8)" id="skill8">Plus d'informations</a>
               </p>
           </div>
         </div>
@@ -145,7 +145,7 @@
                 Autonomie
               </p>
               <p>
-                <a class="moreInformation" (click)="showSkillsModal(9)">Plus d'informations</a>
+                <a class="moreInformation" (click)="showSkillsModal(9)" id="skill9">Plus d'informations</a>
               </p>
           </div>
         </div>
@@ -181,6 +181,17 @@
         Pour évoluer dans ma carrière, je devrais m'intéresser plus aux technologies libres de droits ou autres 
         que Microsoft.
       </p>
+      <p class="underline">
+        Projets liés :
+      </p>
+      <p class="linkToSkills">
+        <a (click)="GoToProjects(2)">
+          <img src="../../assets/pictures/projects/LostTime/LostTime.png"/>
+        </a>
+        <a (click)="GoToProjects(0)">
+          <img src="../../assets/pictures/experiences/SociétéGénérale.png"/>
+        </a>
+      </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[1] ? 'flex' : 'none'}">
       <p class="modalTitle">
@@ -206,6 +217,14 @@
         Pour évoluer dans ma carrière, je devrais m'intéresser aux nouvelles technologies du web comme 
         Typescript et Angular (que j'utilise pour ce site internet), mais aussi d'autres outils comme React.
       </p>
+      <p class="underline">
+        Projets liés :
+      </p>
+      <p class="linkToSkills">
+        <a (click)="GoToProjects(0)">
+          <img src="../../assets/pictures/experiences/SociétéGénérale.png"/>
+        </a>
+      </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[2] ? 'flex' : 'none'}">
       <p class="modalTitle">
@@ -229,6 +248,17 @@
       <p>
         Pour évoluer dans ma carrière, je devrais m'intéresser aux autres types de base de données et
         passer une certification Microsoft SQL Serveur.
+      </p>
+      <p class="underline">
+        Projets liés :
+      </p>
+      <p class="linkToSkills">
+        <a (click)="GoToProjects(2)">
+          <img src="../../assets/pictures/projects/LostTime/LostTime.png"/>
+        </a>
+        <a (click)="GoToProjects(0)">
+          <img src="../../assets/pictures/experiences/SociétéGénérale.png"/>
+        </a>
       </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[3] ? 'flex' : 'none'}">
@@ -254,6 +284,14 @@
         Pour évoluer sur cette technologie, je devrais travailler sur un projet de jeux avec une vision 
         de déploiement sur l'application play Store.
       </p>
+      <p class="underline">
+        Projets liés :
+      </p>
+      <p class="linkToSkills">
+        <a (click)="GoToProjects(2)">
+          <img src="../../assets/pictures/projects/LostTime/LostTime.png"/>
+        </a>
+      </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[4] ? 'flex' : 'none'}">
       <p class="modalTitle">
@@ -275,6 +313,14 @@
       <p>
         Pour évoluer sur ces technolgies, je devrais pousser encore plus loin dans la compréhension 
         fondamentale de comment fonctionnent ces languages au plus bas niveau.
+      </p>
+      <p class="underline">
+        Projets liés :
+      </p>
+      <p class="linkToSkills">
+        <a (click)="GoToProjects(0)">
+          <img src="../../assets/pictures/experiences/SociétéGénérale.png"/>
+        </a>
       </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[5] ? 'flex' : 'none'}">
@@ -298,6 +344,14 @@
       <p>
         Pour évoluer sur cette technolgie, je devrais pousser encore plus loin dans la compréhension 
         fondamentale de comment fonctionne cet outil.
+      </p>
+      <p class="underline">
+        Projets liés :
+      </p>
+      <p class="linkToSkills">
+        <a (click)="GoToProjects(0)">
+          <img src="../../assets/pictures/experiences/SociétéGénérale.png"/>
+        </a>
       </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[6] ? 'flex' : 'none'}">
@@ -337,6 +391,17 @@
         <label class="bold">proactif</label>
         et <label class="bold">plus efficace</label> dans 
         mes tâches.
+      </p>
+      <p class="underline">
+        Projets liés :
+      </p>
+      <p class="linkToSkills">
+        <a (click)="GoToProjects(2)">
+          <img src="../../assets/pictures/projects/TeaTalk/TeaTalk.png"/>
+        </a>
+        <a (click)="GoToProjects(0)">
+          <img src="../../assets/pictures/experiences/SociétéGénérale.png"/>
+        </a>
       </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[7] ? 'flex' : 'none'}">
@@ -379,6 +444,17 @@
         <label class="bold">mise en avant</label> par mes managers. 
         Cette capacité me permet de franchir les obstacles dans ma vie car elle me permet de trouver de solutions 
         à mes problèmes.
+      </p>
+      <p class="underline">
+        Projets liés :
+      </p>
+      <p class="linkToSkills">
+        <a (click)="GoToProjects(4)">
+          <img src="../../assets/pictures/projects/TableDeTyr/[TableDeTyr] Logo.jpg"/>
+        </a>
+        <a (click)="GoToProjects(0)">
+          <img src="../../assets/pictures/experiences/SociétéGénérale.png"/>
+        </a>
       </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[8] ? 'flex' : 'none'}">
@@ -425,6 +501,17 @@
         Aujourd’hui, ma <label class="bold">capacité</label> à m'adapter dans mon travail est souvent 
         <label class="bold">mis en avant</label> par mes équipes. 
         Pour moi, savoir s'adapter permet aux autres d'avoir <label class="bold">confiance</label> en vous.
+      </p>
+      <p class="underline">
+        Projets liés :
+      </p>
+      <p class="linkToSkills">
+        <a (click)="GoToProjects(2)">
+          <img src="../../assets/pictures/projects/TeaTalk/TeaTalk.png"/>
+        </a>
+        <a (click)="GoToProjects(0)">
+          <img src="../../assets/pictures/experiences/QuantumOne.png"/>
+        </a>
       </p>
     </div>
     <div class="modal" [ngStyle]="{'display' : _isSlideVisible[9] ? 'flex' : 'none'}">
@@ -474,6 +561,17 @@
         d’autonomie car selon moi elle est liée à la <label class="bold">confiance</label> que les autres 
         ont envers moi. Je dois encore
         adapter ma communication en fonction du type de manager que j'ai.
+      </p>
+      <p class="underline">
+        Projets liés :
+      </p>
+      <p class="linkToSkills">
+        <a (click)="GoToProjects(2)">
+          <img src="../../assets/pictures/projects/LostTime/LostTime.png"/>
+        </a>
+        <a (click)="GoToProjects(0)">
+          <img src="../../assets/pictures/experiences/SociétéGénérale.png"/>
+        </a>
       </p>
     </div>
   
