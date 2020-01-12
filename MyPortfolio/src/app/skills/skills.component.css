@@ -1,0 +1,133 @@
+* {box-sizing:border-box}
+
+.globalContainer{
+    position: relative;
+    margin: auto;
+}
+
+.container{
+    background-color: #f6f5e1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.skillInfo{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.skillContainer{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 1%;
+    border: 2px solid black;
+}
+
+.skillContainer:hover img{
+    opacity: 0.3;
+}
+
+.skillContainer:hover .skillInfo{
+    opacity: 1;
+}
+
+.info{
+    background-color: #575a57a1;
+    color: white;
+    padding: 5%;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.modalContainer{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #000000d1;
+  top: 0;
+  left: 0;
+  padding: 5%;
+  z-index: 10;
+}
+
+.modal{
+  width: 100%;
+  max-height: 100%;
+  background-color: white;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 5%;
+  font-family: sans-serif;
+}
+
+.moreDetails{
+  text-align: right;
+  cursor: pointer;
+}
+
+.modalReturnContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.modalReturn{
+  margin-top: 25px;
+  padding: 10px 35px;
+  border-radius: 25px;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 1px solid white;
+  background-color: white;
+}
+
+.modalReturn:hover{
+  background-color: black;
+  color: white;
+}
+
+.title p{
+    text-align: center;
+    padding: 25px;
+}
+
+.title p label{
+    border: 1px solid black;
+    padding: 5px 150px;
+    border-radius: 25px;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.moreInformation{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.modalTitle{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bold{
+  font-weight: bold;
+}

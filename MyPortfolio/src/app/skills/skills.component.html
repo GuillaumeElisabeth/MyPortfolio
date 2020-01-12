@@ -1,0 +1,485 @@
+<div class="globalContainer">
+
+    <div class="title">
+      <p><label>Compétences techniques</label></p>
+    </div>
+  
+    <div class="container">
+      <div class="skillContainer">
+        <img src="../../assets/pictures/skills/technicalSkills/DotNetCore.png"/>
+        <div class="skillInfo">
+          <div class="info">
+            <p>
+              C# & Microsoft.NET
+            </p>
+            <p>
+              <a class="moreInformation" (click)="showSkillsModal(0)">Plus d'informations</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="skillContainer">
+        <img src="../../assets/pictures/skills/technicalSkills/Javascript.png"/>
+        <div class="skillInfo">
+          <div class="info">
+              <p>
+                Javascript
+              </p>
+              <p>
+                <a class="moreInformation" (click)="showSkillsModal(1)">Plus d'informations</a>
+              </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="skillContainer">
+        <img src="../../assets/pictures/skills/technicalSkills/SSMS.jpg"/>
+        <div class="skillInfo">
+          <div class="info">
+              <p>
+                SQL Server Management Studio & T-SQL
+              </p>
+              <p>
+                <a class="moreInformation" (click)="showSkillsModal(2)">Plus d'informations</a>
+              </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="skillContainer">
+        <img src="../../assets/pictures/skills/technicalSkills/Unity3D.png"/>
+        <div class="skillInfo">
+          <div class="info">
+              <p>
+                Unity3D
+              </p>
+              <p>
+                <a class="moreInformation" (click)="showSkillsModal(3)">Plus d'informations</a>
+              </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="skillContainer">
+        <img src="../../assets/pictures/skills/technicalSkills/HTML5&CSS3.jpeg"/>
+        <div class="skillInfo">
+          <div class="info">
+              <p>
+                HTML5 & CSS3
+              </p>
+              <p>
+                <a class="moreInformation" (click)="showSkillsModal(4)">Plus d'informations</a>
+              </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="skillContainer">
+        <img src="../../assets/pictures/skills/technicalSkills/Talend.png"/>
+        <div class="skillInfo">
+          <div class="info">
+              <p>
+                Talend
+              </p>
+              <p>
+                <a class="moreInformation" (click)="showSkillsModal(5)">Plus d'informations</a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="title">
+      <p><label>Compétences humaines</label></p>
+    </div>
+  
+    <div class="container">
+      <div class="skillContainer">
+        <img src="../../assets/pictures/skills/humanSkills/Organisation.jpg"/>
+        <div class="skillInfo">
+          <div class="info">
+            <p>
+              Organisation
+            </p>
+            <p>
+              <a class="moreInformation" (click)="showSkillsModal(6)">Mon expérience</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="skillContainer">
+        <img src="../../assets/pictures/skills/humanSkills/ForceDeProposition.jpg"/>
+        <div class="skillInfo">
+          <div class="info">
+              <p>
+                Force de proposition
+              </p>
+              <p>
+                <a class="moreInformation" (click)="showSkillsModal(7)">Plus d'informations</a>
+              </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="skillContainer">
+        <img src="../../assets/pictures/skills/humanSkills/flexibility.jpg"/>
+        <div class="skillInfo">
+          <div class="info">
+              <p>
+                Adaptabilité
+              </p>
+              <p>
+                <a class="moreInformation" (click)="showSkillsModal(8)">Plus d'informations</a>
+              </p>
+          </div>
+        </div>
+      </div>
+    
+      <div class="skillContainer">
+        <img src="../../assets/pictures/skills/humanSkills/autonomie.png"/>
+        <div class="skillInfo">
+          <div class="info">
+              <p>
+                Autonomie
+              </p>
+              <p>
+                <a class="moreInformation" (click)="showSkillsModal(9)">Plus d'informations</a>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <p style="height: 25px;" id="hobbies"></p>
+  
+  <div class="modalContainer"
+  [ngStyle]="{'display' : _isModalVisible ? 'block' : 'none'}">
+  
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[0] ? 'flex' : 'none'}">
+      <p class="modalTitle">
+        C#/.NET
+      </p>
+      <p>
+        Microsoft .NET est le nom donné à l'ensemble des produits et de technologies informatiques de 
+        Microsoft pour rendre des applications facilement portables sur Internet. On utilise ces outils 
+        pour développer des logiciels, des sites web et des applications mobiles.
+      </p>
+      <p>
+        J'utilise les technologies Microsoft dans tous mes projets professionnels et personnels.
+        Cela me permet de développer des applications en ayant une base déjà implémenter et donc plus facile 
+        à déployer pour tous types de plateformes.
+      </p>
+      <p>
+        Je connais bien les technologies Microsoft et certaines de leurs limites. Aujourd'ui je développe 
+        pour des clients d'Afrique des applications via Microsoft .NET car cela simplifie le déploiement 
+        sur place pour eux.
+      </p>
+      <p>
+        Pour évoluer dans ma carrière, je devrais m'intéresser plus aux technologies libres de droits ou autres 
+        que Microsoft.
+      </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[1] ? 'flex' : 'none'}">
+      <p class="modalTitle">
+        Javascript
+      </p>
+      <p>
+        Javascript est un langage de programmation qui permet d'ajouter du comportement complexe 
+        à un site internet. Mais il permet aussi de communiquer avec des serveurs lorsqu'il est utilisé 
+        avec Node.js.
+      </p>
+      <p>
+        J'utilise Javascript dans tous les projets de site web car il me permet d'ajouter du comportement et
+        de gérer le contenu de mon site dynamiquement. Ce langage de programmation est l'un des plus utilisés
+        au monde.
+      </p>
+      <p>
+        Je connais bien Javascript et ses problématiques. Aujourd'hui, je développe une application 
+        web pour mes clients en Afrique car du fait de leur faible réseau informatique, on doit optimiser 
+        les échanges entre l'application et les serveurs distants. Javascript me permet de gérer localement 
+        beaucoup d'événements pour ne pas surcharger le réseau.
+      </p>
+      <p>
+        Pour évoluer dans ma carrière, je devrais m'intéresser aux nouvelles technologies du web comme 
+        Typescript et Angular (que j'utilise pour ce site internet), mais aussi d'autres outils comme React.
+      </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[2] ? 'flex' : 'none'}">
+      <p class="modalTitle">
+        SQL Server Management Studio et Transact-SQL
+      </p>
+      <p>
+        SSMS est un système de gestion de base de données relationnel de Microsoft 
+        qui permet de gérer de la donnée.
+        T-SQL est un langage de programmation associé aux bases de données relationnelles.
+      </p>
+      <p>
+        J'utilise SSMS dans mes projets professionnels car cette application offre une large gamme d'action
+        et qu'elle est facile à prendre en main. De ce fait, lorsque je travaille avec des non techniques, 
+        il est très simple pour eux de reproduire une procédure via un tutoriel en ligne.
+        T-SQL me permet d'écrire des scripts pour manipuler les données.
+      </p>
+      <p>
+        Je connais très bien SSMS et T-SQL car je les utilise tous les jours depuis 2 ans maintenant.
+        Mon niveau technique sur ces technologies est très apprécié par mon équipe.
+      </p>
+      <p>
+        Pour évoluer dans ma carrière, je devrais m'intéresser aux autres types de base de données et
+        passer une certification Microsoft SQL Serveur.
+      </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[3] ? 'flex' : 'none'}">
+      <p class="modalTitle">
+        Unity
+      </p>
+      <p>
+        Unity est un moteur de jeu multi-plateforme. IL est l'un des plus répandus dans l'industrie du jeu 
+        vidéo. Cet outil m'a permis de développer des jeux complexes en nous proposant des articles 
+        préfabriqués que l'on peut utiliser gratuitement.
+      </p>
+      <p>
+        J'utilise Unity3d pour développer des jeux mais aussi pour travailler sur des aspects 
+        techniques très complexes comme le pathfinding, le multijoueur, la 3D, les animations...
+        C'est un outil très puissant et très bien documenté.
+      </p>
+      <p>
+        Mon niveau sur Unity3D me permet de concevoir des petits jeux multijoueur avec des interactions,
+        des objectifs et un peu d'animations. En 3ème année d'école, j'ai développé un jeu style action RPG sur 
+        Android dont le but était de parcourir un univers Steampunk et de résoudre des énigmes.
+      </p>
+      <p>
+        Pour évoluer sur cette technologie, je devrais travailler sur un projet de jeux avec une vision 
+        de déploiement sur l'application play Store.
+      </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[4] ? 'flex' : 'none'}">
+      <p class="modalTitle">
+        HTML5 et CSS3
+      </p>
+      <p>
+        HTML5 est un langage qui permet de concevoir des sites web alors que le CSS3 le mettra en forme
+        (police, couleur, dimension,...). On utilise ces languages pour concevoir des sites internet.
+      </p>
+      <p>
+        L'utilité de HTML5 et CSS3 dans la création des sites internet est pour moi indéniable. Dès que je 
+        dois concevoir des sites internet, j'utilise ces outils. Ils sont à la base de tous les sites internet
+        du monde.
+      </p>
+      <p>
+        Mon niveau de compétence est très élevé dans sur ces technologies. Je connais très bien ces outils 
+        et je les utilise tous les jours.
+      </p>
+      <p>
+        Pour évoluer sur ces technolgies, je devrais pousser encore plus loin dans la compréhension 
+        fondamentale de comment fonctionnent ces languages au plus bas niveau.
+      </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[5] ? 'flex' : 'none'}">
+      <p class="modalTitle">
+        Talend data integration
+      </p>
+      <p>
+        Talend data intégration est un outil d'intégration de données servant à connecter, consulter
+        et transformer tous les types de données depuis et vers n'importe quelle source.
+      </p>
+      <p>
+        J'utilise Talend dans mon projet à la société générale et elle me permet de collecter des données
+        provenant de plusieurs sources à la fois, de les consulter, de les transformer et de les renvoyer 
+        vers d'autres sources. Cet outil me permet de faire travailler notre application avec des outils 
+        de la banque sans lien direct.
+      </p>
+      <p>
+        Mon niveau de compétence est très élevé dans sur cette technologie. Aujourd'hui je m'occupe 
+        directement d'une demande d'une filiale dont la majorité de la solution se base sur Talend.
+      </p>
+      <p>
+        Pour évoluer sur cette technolgie, je devrais pousser encore plus loin dans la compréhension 
+        fondamentale de comment fonctionne cet outil.
+      </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[6] ? 'flex' : 'none'}">
+      <p class="modalTitle">
+        Organisation : un pilier de la réussite
+      </p>
+      <p>
+        L'organisation ce n'est pas seulement suivre un planning, c'est la capacité à 
+        <label class="bold">gérer son emploi du temps</label>
+        et de savoir l'adapter si besoin. Cette compétence me permet d'organiser mon temps pour 
+        aider mes collègues ou participer à des événements externes.
+      </p>
+      <p>
+        Se montrer proactif
+      </p>
+      <p>
+        Pour une équipe, avoir des membres qui savent s'organiser est une 
+        <label class="bold">force</label> indéniable. 
+        Cette compétence est <label class="bold">gain de ressource</label>
+        et <label class="bold">gain de temps</label> important pour une entreprise.
+        Cela permet d'être proactif et plus efficace dans notre travail.
+      </p>
+      <p>
+        Mise en place d'une stratégie
+      </p>
+      <p>
+        Je peux aussi vous parler du projet CONCILIAN pour la Société Générale. Ma mission
+        consistait à organiser un transfert de service d’une filiale de la Société Générale à une autre au sein
+        de notre outil informatique à travers des comités de pilotage. Je devais prendre en compte les sujets
+        de la sécurité des informations bancaires, des règles juridiques et les choix de chaque filiale.
+      </p>
+      <p>
+        Je gère ma vie
+      <p>
+        Aujourd’hui, mon <label class="bold">organisation</label> me permet de gérer ma vie professionnelle et 
+        ma vie privée dans les meilleures conditions. Ainsi que d'être plus 
+        <label class="bold">proactif</label>
+        et <label class="bold">plus efficace</label> dans 
+        mes tâches.
+      </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[7] ? 'flex' : 'none'}">
+      <p class="modalTitle">
+        Force de proposition : comment aller de l'avant ?
+      </p>
+      <p>
+        Être force de proposition c'est être capable de 
+        <label class="bold">chercher, trouver et d'argumenter sur des solutions</label>.
+        Cette capacité est liée à <label class="bold">ma passion</label> de trouver de solutions à 
+        des problèmes de tous les jours. Cette compétence me permet de travailler en toute créativité et 
+        liberté avec mon équipe.
+      </p>
+      <p>
+        Une force d'action
+      </p>
+      <p>
+        Pour une équipe, il est important d'avoir des membres qui sont 
+        <label class="bold">force de proposition</label>.
+        Cette compétence est <label class="bold">gain de ressource</label> et 
+        <label class="bold"> un gain de temps</label> important pour une entreprise.
+        Cela permet d'avoir des solutions fiables à des problèmes rapidement, ce qui est 
+        <label class="bold">avantageux</label> 
+        lors de réunions de crise ou lors de réunions avec un client.
+      </p>
+      <p>
+        Proposer une solution viable
+      </p>
+      <p>
+        Je peux aussi vous parler du projet CONCILIAN pour la Société Générale. Ma mission
+        consistait à organiser un transfert de service d’une filiale de la Société Générale à une autre au sein
+        de notre outil informatique à travers des comités de pilotage. Je devais prendre en compte les sujets
+        de la sécurité des informations bancaires, des règles juridiques et les choix de chaque filiale.
+      </p>
+      <p>
+        Une force dans ma vie
+      <p>
+        Aujourd’hui, ma <label class="bold">capacité</label> à être force de proposition dans mon travail 
+        est souvent 
+        <label class="bold">mise en avant</label> par mes managers. 
+        Cette capacité me permet de franchir les obstacles dans ma vie car elle me permet de trouver de solutions 
+        à mes problèmes.
+      </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[8] ? 'flex' : 'none'}">
+      <p class="modalTitle">
+        Adaptabilité : un atout indéniable
+      </p>
+      <p>
+        L'adaptabilité signifie être capable de <label class="bold">s'adapter</label> facilement aux 
+        modifications auxquelles on peut être soumis.
+        C'est savoir modifier sa vision et sa manière de travailler pour s'accorder avec son nouvel 
+        environnement.
+        Cette capacité est liée à <label class="bold">ma volonté de réussir</label> et 
+        elle me permet de travailler 
+        en toute sérénité avec les personnes que je rencontre.
+      </p>
+      <p>
+        Un pilier de la réussite
+      </p>
+      <p>
+        Aujourd'hui plus qu'avant, il est important de savoir 
+        <label class="bold">s'adapter au changement</label>.
+        Il faut être capable de travailler dans toutes les conditions, ainsi nous 
+        sommes moins soumis au stress lors de grands changements.
+        Cette capacité est une <label class="bold">ressource</label> indéniable pour une entreprise car
+        notre adaptabilité est une <label class="bold">force</label> dans un monde où tout change rapidement.
+      </p>
+      <p>
+        Adaptabilité en oeuvre.
+      </p>
+      <p>
+        Je peux commencer avec ATLAS, application web de QuantumOne dont le but est de gérer
+        l’ensemble de la relation clients et les ressources internes de l’entreprise. Pour ce projet, j'ai 
+        travaillé en relation avec l'administration de l'entreprise et je devais m'adapter aux nouveaux besoins
+        et nouvelle priorisation constantes du projet.
+        <br/>
+        Je peux aussi vous parler du projet M.E.R.C.I pour la Société Générale. Ma mission
+        consistait à développer la nouvelle version du projet avec une date de déploiement. Mais nous 
+        devions nous tenir à jour des changements dus aux aspects politiques, légaux et administratifs 
+        de l'entreprise.
+      </p>
+      <p>
+        Comment je m'adapte
+      <p>
+        Aujourd’hui, ma <label class="bold">capacité</label> à m'adapter dans mon travail est souvent 
+        <label class="bold">mis en avant</label> par mes équipes. 
+        Pour moi, savoir s'adapter permet aux autres d'avoir <label class="bold">confiance</label> en vous.
+      </p>
+    </div>
+    <div class="modal" [ngStyle]="{'display' : _isSlideVisible[9] ? 'flex' : 'none'}">
+      <p class="modalTitle">
+        Autonomie : comment être digne de confiance ?
+      </p>
+      <p>
+        Être autonome signifie est capable de <label class="bold">s’organiser</label> efficacement dans son 
+        travail. C’est savoir chercher, trier et comprendre les solutions à un problème, donc savoir progresser. 
+        Cette capacité est liée à la <label class="bold">confiance</label> que vos équipes et vos clients ont 
+        envers vous. L’autonomie est une compétence humaine qui me permet de travailler en toute créativité et 
+        liberté avec mes équipes et mes clients.
+      </p>
+      <p>
+        Autonomie et la réussite en entreprise
+      </p>
+      <p>
+        Dans une équipe, il est important de pouvoir se faire <label class="bold">confiance</label> Ainsi, 
+        être autonome permet
+        de montrer que l’on sait s’autoformer et organiser sa charge de travail. C’est un 
+        <label class="bold">gain de ressource</label>
+        important pour une entreprise car on devient actif sur un projet plus rapidement.
+        L’autonomie c’est savoir apprendre et s’adapter aux nouvelles technologies ou méthodes de
+        travail de l’entreprise, donc nous permettre de fournir un 
+        <label class="bold">travail de qualité</label>.
+      </p>
+      <p>
+        L’autonomie au sein de projets
+      </p>
+      <p>
+        Je peux commencer avec ATLAS, application web de QuantumOne dont le but est de gérer
+        l’ensemble de la relation clients et les ressources internes de l’entreprise. Pour ce projet, j’ai travaillé
+        comme seul développeur et en totale autonomie avec le PDG, la DRH et le DAF de la société pour
+        concevoir une application qui répondrait aux besoins de tous.
+        <br/>
+        Je peux aussi vous parler du projet CONCILIAN pour la Société Générale. Ma mission
+        consistait à organiser un transfert de service d’une filiale de la Société Générale à une autre au sein
+        de notre outil informatique à travers des comités de pilotage. Je devais prendre en compte les sujets
+        de la sécurité des informations bancaires, des règles juridiques et les choix de chaque filiale.
+      </p>
+      <p>
+        L'autonomie, une rétrospective personnelle
+      <p>
+        Aujourd’hui, ma <label class="bold">capacité</label> à être autonome dans mon travail est souvent 
+        <label class="bold">cité comme avantageuse</label> pour une équipe et/ou positive. 
+        Je dirai que je mets un accent sur la capacité
+        d’autonomie car selon moi elle est liée à la <label class="bold">confiance</label> que les autres 
+        ont envers moi. Je dois encore
+        adapter ma communication en fonction du type de manager que j'ai.
+      </p>
+    </div>
+  
+    <div class="modalReturnContainer">
+      <p (click)="hideSkillsModal()" class="modalReturn">Retour</p>
+    </div>
+  
+  
+  </div>
