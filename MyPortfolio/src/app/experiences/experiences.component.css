@@ -134,6 +134,8 @@
   .title p{
     text-align: center;
     padding: 25px;
+    margin: 0;
+    background-color: #f6f5e1;
   }
 
   .title p label{
