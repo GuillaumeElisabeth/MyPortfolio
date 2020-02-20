@@ -48,7 +48,7 @@ img{
 
 .info{
   background: black;
-  background-color: #575a57a1;
+  /* background-color: #575a57a1; */
   color: white;
   padding: 5%;
   font-size: 16px;
@@ -61,7 +61,7 @@ img{
   height: 100%;
   position: fixed;
   background: black;
-  background-color: #000000d1;
+  /* background-color: #000000d1; */
   top: 0;
   left: 0;
   padding: 5%;
